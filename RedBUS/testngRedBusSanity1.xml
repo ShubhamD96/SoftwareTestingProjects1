@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="3"  parallel="tests">
+
+  <test  name="ChromeTest"  thread-count="2"  parallel="classes">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="redBusTestNG.RedBusHomePageTestNGSuite2"/>
+      <class name="redBusTestNG.RedBusHomePageTestNGSuite1"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test  name="FirefoxTest"  thread-count="2"  parallel="classes">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="redBusTestNG.RedBusHomePageTestNGSuite2"/>
+      <class name="redBusTestNG.RedBusHomePageTestNGSuite1"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test  name="EdgeTest"  thread-count="2"  parallel="classes">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="redBusTestNG.RedBusHomePageTestNGSuite2"/>
+      <class name="redBusTestNG.RedBusHomePageTestNGSuite1"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
